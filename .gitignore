@@ -1,0 +1,5 @@
+.idea/
+.virtualenv/
+__pycache__/
+logs/
+vbb_data/
