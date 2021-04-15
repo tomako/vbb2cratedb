@@ -3,6 +3,10 @@
 Requirements:
  * Docker
 
+One word about some SSL handshake issue I have experienced. According to Docker documentation "By default, all containers have networking enabled and they can make any outgoing connections."
+For some reason downloading VBB data from the https site does not work for me. The SSL handshake gets stalled. It is for both python-requests and curl. I tried few things without success and eventually added the `--network="host"` parameter to run the container where the downloading got initiated.
+I don't know the real reason yet so be aware this workaround might not be needed in your environment.
+
 ## Solution 1
 
 Start CrateDB container and another one to run the loader script (python).
