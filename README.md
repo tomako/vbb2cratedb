@@ -1,4 +1,4 @@
-# Assessment task for Crate.io
+# Move VBB data to CrateDB
 
 Requirements:
  * Docker
